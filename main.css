@@ -1,0 +1,109 @@
+@@font-face {
+  font-family: Candal;
+  src: url(fonts/Candal.ttf)
+}
+body{
+margin:0px
+}
+.box{
+  height:600px;
+  background:black;
+  margin:0px;
+  padding-top: 250px;
+}
+.timer{
+  color:white;
+  text-align:center;
+  font-size: 4.5em;
+  font-family: Candal;
+}
+.hex{
+  position:relative;
+  display:none;
+  width:140px;
+}
+#hour-color::after{
+    content:":";
+    position:absolute;
+    bottom:5px;
+    right:0px;
+    left: 130px;
+}
+#min-color::after{
+    content:":";
+    position:absolute;
+    bottom:5px;
+    right:0px;
+    left: 130px;
+}
+
+#hour{
+  position:relative;
+  display:inline-block;
+  width:140px;
+}
+#hour::after{
+  content:":";
+  position:absolute;
+  bottom:5px;
+  right:0px;
+  left: 130px;
+}
+#minutes::after{
+  content:":";
+  position:absolute;
+  bottom:5px;
+  right:0px;
+  left:130px;
+}
+#minutes{
+  position:relative;
+  padding-left:0px;
+  display:inline-block;
+  width:140px;
+}
+#seconds{
+  padding-left:0px;
+  width:130px;
+  display:inline-block;
+}
+.underline{
+  margin:auto;
+  height:2px;
+  background-color: white;
+}
+@media (max-width:467px){
+  .timer{
+    font-size:3.5em;
+  }
+  #minutes{
+    position:relative;
+    padding-left:0px;
+    display:inline-block;
+    width:90px;
+  }
+  #seconds{
+    padding-left:0px;
+    width:90px;
+    display:inline-block;
+  }
+  #hour{
+    position:relative;
+    display:inline-block;
+    width:90px;
+  }
+  #hour::after{
+    content:":";
+    position:absolute;
+    bottom:5px;
+    right:0px;
+    left: 80px;
+  }
+  #minutes::after{
+    content:":";
+    position:absolute;
+    bottom:5px;
+    right:0px;
+    left:85px;
+  }
+}
