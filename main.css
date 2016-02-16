@@ -1,6 +1,6 @@
-@@font-face {
+@font-face {
   font-family: Candal;
-  src: url(fonts/Candal.ttf)
+  src: url(fonts/Candal.ttf);
 }
 body{
 margin:0px
